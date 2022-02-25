@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-container-abogado{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    justify-content:center;
+    align-items:center;
+    gap: 70px;
+}
+
+.img-fondo{
+    object-fit: cover;
+    margin:0px;
+    width:900px;
+    height: 1000px;
+}
+
+/* Formulario */	
+
+.container-form h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container-form h2{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.form-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+*  Me falta el tipo de letra 
+*/
+
+ label { 
+    margin: 20px;
+}
+.form-main input{
+    padding:10px;
+    width: 300px;
+    margin-bottom: 10px;
+    
+}
+.form-main input:hover{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/* Boton */
+#btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.login{
+    margin: 10px 0;
+    border: none;
+    padding: 10px;
+    color:aliceblue;
+    background-color: #3618EF;
+    width: 300px;
+}
+.login:hover{
+    background-color: #6c59e9;
+}
+.registrarse{
+    background-color: #f80000;
+}
+
+.logout:hover{
+    background-color: #11f290;
+}
+.registrarse:hover{
+    background-color: #fd5151;
+}
+
+
+a{
+    text-decoration: none;
+    color:white;
+}
+.olvidar_Contrasenia{
+    color:black;
+    margin:0 auto;
+    margin-top: 7px;
+    font-size: 16px;
+}
+
+/*  */
+
+p{
+    margin-bottom:2px;
+}
+
+@media screen and (max-width: 970px){
+    .img-fondo{
+        display: none;
+    }
+    .main-container-abogado{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        gap:0px;
+        height: 600px;
+    }
+    
+    .form-main input{
+        width: 90%;
+    }
+    .login{
+        width: 223px;
+    }
+
+}
+    
+@media screen and (max-width:1155px){
+    .img-fondo{
+        width: 500px;
+    }
+}

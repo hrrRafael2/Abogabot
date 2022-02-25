@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+   width: 100%;
+   height: 700px;
+}
+
+
+.container{
+    width: 100vw;
+    height: 700px;
+    background-image: url("../../assets/img/inicio.jpg");
+    background-size: cover;
+}
+
+nav{
+    width: 100%;
+    height: 90px;
+    background-color: black;
+}
+nav:hover{
+    background-color: white;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+}
+li{
+    margin-top:24px;
+    margin-right:64px;
+}
+li , a{
+    text-decoration: none;
+    list-style: none;
+}
+a{
+    color: black;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    border:none;
+    padding:10px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 10px 10px 10px 2px rgb(0, 0, 0);
+    width: 200px;
+}
+
+a:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+
+/*  Text-center , titulo   */
+.container-text-main{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    flex-direction: column;
+}
+.text-center{
+    text-align: center;
+    color:white;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0px;
+}
+.btn-login{
+    margin-left: 60px;
+}
+
+
+/*  sobre - nosotros */
+.seccion-sobre-ns{
+    margin-top: 100px;
+}
+
+.container-sobre-nosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+.container-text-sobre-nosotros{
+  display: flex;
+  justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-img-sobre-nosotros , img{
+    width: 600px;
+    margin:0 auto;
+}
+
+.container-text-sobre-nosotros , p{
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+}
+
+/*  form contact */
+
+
+/*
+https://codepen.io/noeemi/pen/WpWqLw 
+menu responsive
+*/
+
+
+/* Phone media queryss*/
+@media screen and (max-width: 970px){
+    nav{
+        height: 50px;
+        background-color: black;
+        
+    }
+    ul{
+        display: none;
+    }
+    
+
+    .container{
+       /*
+       */
+    }
+    .container-sobre-nosotros{
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+    .container-img-sobre-nosotros , img{
+        width: 300px;
+    }
+    .container-text-sobre-nosotros , p{
+        margin: 6px;
+    }
+    
+    textarea{
+        width: 300px;
+        height: 300px;
+    }
+}
